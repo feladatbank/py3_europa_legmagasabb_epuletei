@@ -28,6 +28,23 @@ Feltételezheti, hogy nem alakult ki holtverseny!
 
 3.5 Döntse el, hogy az adatok között található-e olasz épület! A keresését ne folytassa, ha a
 választ meg tudja adni!
+
+minta: output: 
+
+3.2 feladat: Épületek száma: 136 db.
+3.3 feladat: Emeletek összege: 5964
+3.4 feladat: A legmagasabb épület adatai:
+        Név: Federation Tower: East Tower
+        Város: Moszkva
+        Ország: Oroszország
+        Magasság: 373.7 m
+        Emeletek száma: 95
+        Épités éve: 2016
+          
+3.5 feladat: Van olasz épület az adatok között!
+
+
+
 """
 
 #név;város;ország;magasság;emelet;épült
