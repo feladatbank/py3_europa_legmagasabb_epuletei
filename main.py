@@ -40,7 +40,7 @@ class Epuletek:
     self.varos = varos
     self.orszag = orszag
     self.magassag = magassag
-    self.emelet = emelet
+    self.emelet = int(emelet)
     self.epult = epult
 
 with open("legmagasabb.txt","r",encoding="utf-8") as f:
@@ -50,3 +50,9 @@ with open("legmagasabb.txt","r",encoding="utf-8") as f:
 #3.2
 
 print(f"3.2 feladat: Épületek száma: {len(Épület)} db.")
+
+#3.3
+
+emeletek = sum([sor.emelet for sor in Épület])
+
+print(f"3.3 feladat: Emeletek összege: {emeletek}")
