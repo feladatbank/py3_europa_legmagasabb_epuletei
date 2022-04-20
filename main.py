@@ -39,7 +39,7 @@ class Epuletek:
     self.nev = nev
     self.varos = varos
     self.orszag = orszag
-    self.magassag = magassag
+    self.magassag = float(magassag.replace(",","."))
     self.emelet = int(emelet)
     self.epult = epult
 
@@ -56,3 +56,19 @@ print(f"3.2 feladat: Épületek száma: {len(Épület)} db.")
 emeletek = sum([sor.emelet for sor in Épület])
 
 print(f"3.3 feladat: Emeletek összege: {emeletek}")
+
+#3.4
+
+legmagasabb = [(sor.magassag,sor) for sor in Épület]
+
+magas, adat = max(legmagasabb)
+print(f"""3.4 feladat: A legmagasabb épület adatai:
+        Név: {adat.nev}
+        Város: {adat.varos}
+        Ország: {adat.orszag}
+        Magasság: {adat.magassag} m
+        Emeletek száma: {adat.emelet}
+        Épités éve: {adat.epult}
+          """)
+#3.5
+
