@@ -47,3 +47,6 @@ with open("legmagasabb.txt","r",encoding="utf-8") as f:
   fejlec = f.readline()
   Épület = [Epuletek(sor) for sor in f]
 
+#3.2
+
+print(f"3.2 feladat: Épületek száma: {len(Épület)} db.")
