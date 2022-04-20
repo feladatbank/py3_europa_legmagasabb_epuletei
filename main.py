@@ -72,3 +72,16 @@ print(f"""3.4 feladat: A legmagasabb épület adatai:
           """)
 #3.5
 
+#olasz = [sor for sor in Épület if sor.orszag == "Olaszország"]
+olasz = True
+while olasz:
+  for sor in Épület:
+    if sor.orszag == "Olaszország":
+      olasz = False
+  break
+
+if olasz == False:
+  print("3.5 feladat: Van olasz épület az adatok között!")
+elif olasz == True:
+  print("3.5 feladat: Nincs olasz épület az adatok között!")
+  
