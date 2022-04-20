@@ -29,3 +29,21 @@ Feltételezheti, hogy nem alakult ki holtverseny!
 3.5 Döntse el, hogy az adatok között található-e olasz épület! A keresését ne folytassa, ha a
 választ meg tudja adni!
 """
+
+#név;város;ország;magasság;emelet;épült
+#10 Upper Bank Street;London;Anglia;151;32;2003
+
+class Epuletek:
+  def __init__(self,sor):
+    nev,varos,orszag,magassag,emelet,epult = sor.strip().split(";")
+    self.nev = nev
+    self.varos = varos
+    self.orszag = orszag
+    self.magassag = magassag
+    self.emelet = emelet
+    self.epult = epult
+
+with open("legmagasabb.txt","r",encoding="utf-8") as f:
+  fejlec = f.readline()
+  Épület = [Epuletek(sor) for sor in f]
+
